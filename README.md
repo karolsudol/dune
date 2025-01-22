@@ -12,7 +12,7 @@ Dune analytics queries
 1. Clone the repository
 ```bash
 git clone https://github.com/karolsudol/dune.git
-cd dune
+cd dune/apps
 ```
 
 2. Create and activate virtual environment
@@ -36,12 +36,12 @@ echo "DUNE_API_KEY=your_api_key_here" > .env
 
 Basic usage:
 ```bash
-python3 python/get_txs_cnt.py
+python3 get_txs_cnt.py
 ```
 
 With optional parameters:
 ```bash
-python3 python/get_txs_cnt.py --addresses ADDRESS1 ADDRESS2 --start-date YYYY-MM-DD --end-date YYYY-MM-DD
+python3 get_txs_cnt.py --addresses ADDRESS1 ADDRESS2 --start-date YYYY-MM-DD --end-date YYYY-MM-DD
 ```
 
 Parameters:
@@ -57,7 +57,7 @@ Default values:
 
 Example with parameters:
 ```bash
-python3 python/get_txs_cnt.py --addresses 0x123... 0x456... --start-date 2024-01-01 --end-date 2024-03-01
+python3 get_txs_cnt.py --addresses 0x123... 0x456... --start-date 2024-01-01 --end-date 2024-03-01
 ```
 
 The script will:
